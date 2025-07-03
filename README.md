@@ -1,4 +1,4 @@
-# 📚 PeerTutorFinder
+# 📚 Peer Tutor Finder
 
 **PeerTutorFinder** is a simple web app prototype that helps students find peer tutors within their campus.  
 It connects learners with helpful peers or seniors for study support, using **Firebase** for authentication and database, and **Gemini AI** to match doubts with the best available tutor.
