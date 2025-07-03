@@ -48,9 +48,8 @@ npm install
 
 3️⃣ Add your Firebase config
 
-Create a firebase.js file in the project root.
-
-Add your Firebase apiKey, authDomain, projectId and other details.
+- Create a firebase.js file in the project root.
+- Add your Firebase apiKey, authDomain, projectId and other details.
 
 4️⃣ Run the project
 ```bash
