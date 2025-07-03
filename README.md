@@ -55,4 +55,15 @@ npm install
 ```bash
 npm run dev
 ```
+
+---
+
+## 📬 **Contact**
+✉️ adityasingh00552@gmail.com
+
+---
+
+📄 License
+This project is licensed under the MIT License — see LICENSE for details.
+
 ---
