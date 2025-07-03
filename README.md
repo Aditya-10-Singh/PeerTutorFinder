@@ -40,3 +40,20 @@ It connects learners with helpful peers or seniors for study support, using **Fi
 git clone https://github.com/Aditya-10-Singh/PeerTutorFinder.git
 cd PeerTutorFinder
 ```
+
+2️⃣ Install dependencies
+```bash
+npm install
+```
+
+3️⃣ Add your Firebase config
+
+Create a firebase.js file in the project root.
+
+Add your Firebase apiKey, authDomain, projectId and other details.
+
+4️⃣ Run the project
+```bash
+npm run dev
+```
+---
