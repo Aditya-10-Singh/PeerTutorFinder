@@ -158,10 +158,10 @@ Open http://localhost:3000.
 ---
 
 # 🧩 Next Steps
-### ✔️ Add verified flag to tutors
-### ✔️ Build /ask page for learners to post doubts
-### ✔️ Integrate Gemini in /api/recommend-tutor
-### ✔️ Add matches flow with accept/reject
+- ✔️ Add verified flag to tutors
+- ✔️ Build /ask page for learners to post doubts
+- ✔️ Integrate Gemini in /api/recommend-tutor
+- ✔️ Add matches flow with accept/reject
 
 ---
 
