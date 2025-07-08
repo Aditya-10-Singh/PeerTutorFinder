@@ -109,20 +109,20 @@ matches/
   [matchId]: {
     doubtId, tutorUid, learnerUid, status (pending|accepted|rejected)
   }
-
 ```
 ---
 
 # 📌 Project Structure
 
-Folder	Purpose
-/app	Next.js app directory
-/app/(auth)	Login, signup pages
-/app/(peers)	Peer list, connection requests
-/app/(community)	Community posts
-/app/(doubts)	Doubts posting, matching (planned)
-/app/api	Serverless API routes for Gemini & backend tasks
-/firebase.ts	Firebase config & initialization
+| Folder | Purpose |
+|--------|----------|
+| **/app** | Next.js app directory |
+| **/app/(auth)** |	Login, signup pages |
+| **/app/(peers)** | Peer list, connection requests |
+| **/app/(community)** | Community posts |
+| **/app/(doubts)** | Doubts posting, matching (planned) |
+| **/app/api** | Serverless API routes for Gemini & backend tasks | 
+| **/firebase.ts** | Firebase config & initialization |
 
 ---
 
@@ -131,7 +131,6 @@ Folder	Purpose
 Add a .env.local:
 
 env
-
 ```
 NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
@@ -140,7 +139,6 @@ NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=xxxxxxx
 NEXT_PUBLIC_FIREBASE_APP_ID=xxxxxxx
 GEMINI_API_KEY=your_google_gemini_api_key
-
 ```
 ---
 
@@ -160,10 +158,10 @@ Open http://localhost:3000.
 ---
 
 # 🧩 Next Steps
-✔️ Add verified flag to tutors
-✔️ Build /ask page for learners to post doubts
-✔️ Integrate Gemini in /api/recommend-tutor
-✔️ Add matches flow with accept/reject
+### ✔️ Add verified flag to tutors
+### ✔️ Build /ask page for learners to post doubts
+### ✔️ Integrate Gemini in /api/recommend-tutor
+### ✔️ Add matches flow with accept/reject
 
 ---
 
