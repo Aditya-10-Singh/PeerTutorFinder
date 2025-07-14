@@ -49,7 +49,7 @@ export default function CommunityPage() {
   const [likes, setLikes] = useState<{ [key: string]: number }>({});
   const [userLikes, setUserLikes] = useState<{ [key: string]: boolean }>({});
 
-  // ✅ Auth check
+  // Auth check
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (!user) {
@@ -63,14 +63,14 @@ export default function CommunityPage() {
     return () => unsubscribe();
   }, [router]);
 
-  // ✅ Load posts after profile is ready
+  // Load posts after profile is ready
   useEffect(() => {
     if (profile) {
       fetchPosts();
     }
   }, [profile]);
 
-  // ✅ Fetch posts, likes, comments in one pass
+  // Fetch posts, likes, comments in one pass
   const fetchPosts = async () => {
     const q = query(collection(db, "communityPosts"), orderBy("createdAt", "desc"));
     const querySnapshot = await getDocs(q);
@@ -129,7 +129,7 @@ export default function CommunityPage() {
     setComments(allComments);
   };
 
-  // ✅ Create post
+  // Create post
   const handleCreatePost = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!profile) return;
@@ -145,7 +145,7 @@ export default function CommunityPage() {
     fetchPosts();
   };
 
-  // ✅ Add comment
+  // Add comment
   const handleAddComment = async (postId: string) => {
     if (!profile) return;
     const commentContent = newComments[postId]?.trim();
@@ -162,7 +162,7 @@ export default function CommunityPage() {
     fetchPosts();
   };
 
-  // ✅ Like/unlike post
+  // Like/unlike post
   const handleToggleLike = async (postId: string) => {
     if (!profile) return;
 
@@ -181,7 +181,7 @@ export default function CommunityPage() {
     fetchPosts();
   };
 
-  // ✅ Delete post
+  // Delete post
   const handleDeletePost = async (postId: string) => {
     await firestoreDeleteDoc(doc(db, "communityPosts", postId));
     fetchPosts();
@@ -192,7 +192,7 @@ export default function CommunityPage() {
       <Link href="/dashboard" className="text-blue-500 underline mb-4">
         ← Back to Dashboard
       </Link>
-      <h1 className="text-3xl mb-4">🌐 Community Connect</h1>
+      <h1 className="text-3xl mb-4">Community Connect</h1>
 
       <form onSubmit={handleCreatePost} className="w-full max-w-md mb-8">
         <textarea

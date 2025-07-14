@@ -37,7 +37,7 @@ export default function PeersPage() {
   const [selectedUser, setSelectedUser] = useState<UserProfile | null>(null);
   const [message, setMessage] = useState("");
 
-  // ✅ Load profile, users, and connections
+  // Load profile, users, and connections
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (!user) {
@@ -67,7 +67,7 @@ export default function PeersPage() {
   }, [router]);
   
 
-  // ✅ Fetch connections & connected peers
+  // Fetch connections & connected peers
   const fetchConnections = async (uid: string) => {
     const qA = query(collection(db, "connections"), where("userA", "==", uid));
     const qB = query(collection(db, "connections"), where("userB", "==", uid));
@@ -91,7 +91,7 @@ export default function PeersPage() {
     setPeers(connectedPeers);
   };
 
-  // ✅ Send request
+  // Send request
   const sendRequest = async (toUser: UserProfile) => {
     if (!profile) return;
 
@@ -109,7 +109,7 @@ export default function PeersPage() {
     setMessage("");
   };
 
-  // ✅ Filter users by subject search
+  // Filter users by subject search
   const filteredUsers = users.filter(
     (u) =>
       u.subjects?.join(" ").toLowerCase().includes(search.toLowerCase()) &&
@@ -118,7 +118,7 @@ export default function PeersPage() {
 
   return (
     <main className="flex flex-col items-center min-h-screen p-4 w-full">
-      <h1 className="text-3xl mb-4">🌟 Find & Connect with Peers</h1>
+      <h1 className="text-3xl mb-4">Find & Connect with Peers</h1>
 
       <input
         type="text"
@@ -150,13 +150,6 @@ export default function PeersPage() {
         </div>
       )}
 
-      {/* Connected Peers */}
-      <h2 className="text-2xl mb-2">🤝 Your Connections</h2>
-      {peers.length === 0 && (
-        <p className="text-gray-500 mb-4">
-          You don’t have any connections yet.
-        </p>
-      )}
       <div className="w-full max-w-md">
         {peers.map((peer) => (
           <div key={peer.uid} className="border p-4 mb-4 rounded shadow">

@@ -117,33 +117,50 @@ export default function DashboardPage() {
         <>
           <h1 className="text-3xl mb-2">Welcome, {profile.name}!</h1>
           <p className="mb-2">Role: {profile.role}</p>
-          <button
-            onClick={handleLogout}
-            className="bg-red-500 text-white p-2 rounded mb-4"
-          >
-            Log Out
-          </button>
 
-          <Link
-            href="/community"
-            className="text-blue-600 underline mb-8"
-          >
-            Go to Community Connect
-          </Link>
+          <div className="grid grid-cols-3 gap-4 mb-12">
+            <Link
+              href="/community"
+              className="bg-purple-500 text-white px-4 py-2 rounded text-center"
+            >
+              Community Connect
+            </Link>
 
-          <Link 
-            href="/peers" 
-            className="bg-purple-500 text-white px-4 py-2 rounded mb-4"
-          >
-            🔍 Find Tutors & Learners
-          </Link>
+            <Link
+              href="/peers"
+              className="bg-purple-500 text-white px-4 py-2 rounded text-center"
+            >
+              Find Tutors & Learners
+            </Link>
 
-          <Link 
-            href="/connections" 
-            className="text-blue-500 underline mb-4"
-          >
-            View Connection Requests
-          </Link>
+            <Link
+              href="/connections"
+              className="bg-purple-500 text-white px-4 py-2 rounded text-center"
+            >
+              Connection Requests
+            </Link>
+
+            <Link
+              href="/api/ask-doubt"
+              className="bg-purple-500 text-white px-4 py-2 rounded text-center"
+            >
+              Post a Doubt
+            </Link>
+
+            <Link
+              href="/my-doubts"
+              className="bg-purple-500 text-white px-4 py-2 rounded text-center"
+            >
+              View My Doubts
+            </Link>
+
+            <Link
+              href="/all-doubts"
+              className="bg-purple-500 text-white px-4 py-2 rounded text-center"
+            >
+              View All Doubts
+            </Link>
+          </div>
 
           {/* Create Post */}
           <form onSubmit={handleCreatePost} className="w-full max-w-md mb-8">
@@ -178,6 +195,12 @@ export default function DashboardPage() {
               </div>
             ))}
           </div>
+          <button
+            onClick={handleLogout}
+            className="bg-red-500 text-white p-2 rounded mb-4"
+          >
+            Log Out
+          </button>
         </>
       ) : (
         <p>Loading profile...</p>

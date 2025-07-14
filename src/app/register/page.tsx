@@ -40,17 +40,17 @@ export default function RegisterPage() {
       );
       const user = userCredential.user;
 
-      // ✅ This part is important!
+      // This part is important!
       await updateProfile(user, {
         displayName: name,
       });
 
-      // ✅ Save to Firestore too
+      // Save to Firestore too
       await setDoc(doc(db, "users", user.uid), {
         uid: user.uid,
         email: user.email,
         name,
-        role,
+        role: role.trim().charAt(0).toUpperCase() + role.trim().slice(1).toLowerCase(),
         subjects: subjects.split(",").map(s => s.trim()),
         bio,
         createdAt: serverTimestamp(),

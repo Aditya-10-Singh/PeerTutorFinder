@@ -41,7 +41,7 @@ export default function ConnectionsPage() {
   const [requests, setRequests] = useState<ConnectionRequest[]>([]);
   const [profileUid, setProfileUid] = useState<string | null>(null);
 
-  // ✅ Load both connections AND requests for this user
+  // Load both connections AND requests for this user
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, async (user) => {
       if (!user) {
@@ -113,7 +113,7 @@ export default function ConnectionsPage() {
     setRequests(reqs);
   };
 
-  // ✅ Accept a request → create connection + delete request
+  // Accept a request → create connection + delete request
   const handleAccept = async (req: ConnectionRequest) => {
     await addDoc(collection(db, "connections"), {
       fromUid: req.fromUid,
@@ -129,7 +129,7 @@ export default function ConnectionsPage() {
     fetchRequests(profileUid!);
   };
 
-  // ✅ Reject a request → just delete request
+  // Reject a request → just delete request
   const handleReject = async (req: ConnectionRequest) => {
     await deleteDoc(doc(db, "connectionRequests", req.id));
     alert(`Rejected request from ${req.fromName}`);
@@ -138,7 +138,7 @@ export default function ConnectionsPage() {
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-4 w-full">
-      <h1 className="text-3xl mb-4">🤝 Your Connections</h1>
+      <h1 className="text-3xl mb-4">Your Connections</h1>
 
       {connections.length === 0 && <p>No active connections yet.</p>}
 
@@ -164,7 +164,7 @@ export default function ConnectionsPage() {
         })}
       </div>
 
-      <h2 className="text-2xl mb-4">📨 Incoming Requests</h2>
+      <h2 className="text-2xl mb-4">Incoming Requests</h2>
       {requests.length === 0 && (
         <p className="text-gray-500">No incoming requests.</p>
       )}

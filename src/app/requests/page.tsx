@@ -66,14 +66,14 @@ export default function RequestsPage() {
   const handleAccept = async (req: ConnectionRequest) => {
     if (!profileUid) return;
 
-    // ✅ Add to `connections` for both users
+    // Add to `connections` for both users
     await addDoc(collection(db, "connections"), {
       userA: profileUid,
       userB: req.fromUid,
       createdAt: serverTimestamp(),
     });
 
-    // ✅ Remove request
+    // Remove request
     await deleteDoc(doc(db, "connectionRequests", req.id));
     alert(`Connection accepted with ${req.fromName}`);
     fetchRequests(profileUid);
@@ -89,7 +89,7 @@ export default function RequestsPage() {
 
   return (
     <main className="flex flex-col items-center justify-start min-h-screen p-4 w-full">
-      <h1 className="text-3xl mb-4">📥 Connection Requests</h1>
+      <h1 className="text-3xl mb-4">Connection Requests</h1>
 
       {requests.length === 0 && (
         <p className="text-gray-500">You have no pending requests.</p>
