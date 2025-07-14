@@ -1,4 +1,4 @@
-# 📚 PeerTutorFinder — Verified Peer Tutoring & Collaboration Web App
+# 📚 PeerTutorFinder — Peer Tutoring & Collaboration Web App Platform
 
 Welcome to **PeerTutorFinder** — a web apllication that connects students with **peer tutors**, enables learners to share doubts, and empowers meaningful academic collaboration through an AI-powered matching system.
 
