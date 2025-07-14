@@ -166,11 +166,11 @@ Always review Firestore rules before deploying to production!
 ---
 
 # 🤝 Contributing
-##### 1️⃣ Fork the repo
-##### 2️⃣ Create a branch: git checkout -b feature/my-feature
-##### 3️⃣ Commit your changes: git commit -m 'Add my feature'
-##### 4️⃣ Push to the branch: git push origin feature/my-feature
-##### 5️⃣ Open a Pull Request
+#### 1️⃣ Fork the repo
+#### 2️⃣ Create a branch: git checkout -b feature/my-feature
+#### 3️⃣ Commit your changes: git commit -m 'Add my feature'
+#### 4️⃣ Push to the branch: git push origin feature/my-feature
+#### 5️⃣ Open a Pull Request
 
 ---
 
