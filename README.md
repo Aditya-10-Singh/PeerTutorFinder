@@ -59,7 +59,7 @@ Welcome to **PeerTutorFinder** — a web apllication that connects students with
 
 ---
 
-## 🗂️ Firestore Structure
+# 🗂️ Firestore Structure
 
 ```plaintext
 users/
