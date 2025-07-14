@@ -32,7 +32,7 @@ Welcome to **PeerTutorFinder** — a web apllication that connects students with
 
 # ✅ Features 
 
-### 1️⃣ User Authentication
+#### 1️⃣ User Authentication
 - Register / login with Firebase Auth.
 - Users register as either `role: "Student"` or `role: "Tutor"`.
 - Supports email / password.
