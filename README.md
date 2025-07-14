@@ -152,6 +152,7 @@ Open http://localhost:3000.
 - Allow read access for community posts and doubts.
 - Allow write operations only for authenticated users.
 - Match rules for connection requests and user profiles securely.
+
 Always review Firestore rules before deploying to production!
 
 ---
