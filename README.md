@@ -32,7 +32,7 @@ Welcome to **PeerTutorFinder** — a web apllication that connects students with
 
 # ✅ Features 
 
-#### 1️⃣ User Authentication
+### 1️⃣ User Authentication
 - Register / login with Firebase Auth.
 - Users register as either `role: "Student"` or `role: "Tutor"`.
 - Supports email / password.
@@ -166,11 +166,11 @@ Always review Firestore rules before deploying to production!
 ---
 
 # 🤝 Contributing
-### 1️⃣ Fork the repo
-### 2️⃣ Create a branch: git checkout -b feature/my-feature
-### 3️⃣ Commit your changes: git commit -m 'Add my feature'
-### 4️⃣ Push to the branch: git push origin feature/my-feature
-### 5️⃣ Open a Pull Request
+##### 1️⃣ Fork the repo
+##### 2️⃣ Create a branch: git checkout -b feature/my-feature
+##### 3️⃣ Commit your changes: git commit -m 'Add my feature'
+##### 4️⃣ Push to the branch: git push origin feature/my-feature
+##### 5️⃣ Open a Pull Request
 
 ---
 
