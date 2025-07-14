@@ -4,7 +4,7 @@ Welcome to **PeerTutorFinder** — a web apllication that connects students with
 
 ---
 
-## 🚀 What is PeerTutorFinder?
+# 🚀 What is PeerTutorFinder?
 
 **PeerTutorFinder** is a modern web app designed to:
 - ✅ Let students register as **Student** or **Tutor**.
@@ -16,7 +16,7 @@ Welcome to **PeerTutorFinder** — a web apllication that connects students with
 
 ---
 
-## ⚙️ Tech Stack
+# ⚙️ Tech Stack
 
 | Layer | Technology |
 |-------|-------------|
@@ -30,7 +30,7 @@ Welcome to **PeerTutorFinder** — a web apllication that connects students with
 
 ---
 
-## ✅ Features 
+# ✅ Features 
 
 ### 1️⃣ User Authentication
 - Register / login with Firebase Auth.
