@@ -16,6 +16,9 @@
 # next.js
 /.next/
 /out/
+/functions/.next
+/functions/node_modules
+
 
 # production
 /build
@@ -40,6 +43,3 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# functions folder (for Firebase Functions if used)
-functions/.next
-functions/node_modules
