@@ -24,7 +24,7 @@ Welcome to **PeerTutorFinder** — a web apllication that connects students with
 | **Backend** | Next.js API Routes |
 | **Authentication** | Firebase Authentication |
 | **Database** | Firebase Firestore |
-| **Hosting** | Firebase Hosting |
+| **Hosting** | Vercel |
 | **AI Matching** | Google Gemini API |
 | **IDX** | Integrated via Firebase user profiles |
 
